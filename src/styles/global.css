@@ -597,7 +597,7 @@ address {
 .footer-name {
   margin: 0 0 8px;
   color: #fff;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.25;
