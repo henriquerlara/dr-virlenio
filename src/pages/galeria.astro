@@ -1,0 +1,24 @@
+---
+import Base from "../layouts/Base.astro";
+import SurgeryGallery from "../components/SurgeryGallery.vue";
+---
+
+<Base
+  title="Atuação cirúrgica | Dr. Virlênio de Andrade Lara"
+  description="Registros da atuação cirúrgica do Dr. Virlênio de Andrade Lara em Ortopedia e Traumatologia."
+  current="cirurgica"
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Cirurgia ortopédica</p>
+      <h1>Atuação cirúrgica</h1>
+      <p class="lead">Registros da atuação cirúrgica do Dr. Virlênio. As imagens são informativas e não garantem resultado.</p>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap">
+      <SurgeryGallery client:load />
+    </div>
+  </section>
+</Base>

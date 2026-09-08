@@ -1,0 +1,68 @@
+---
+import Base from "../layouts/Base.astro";
+import ContactForm from "../components/ContactForm.vue";
+---
+
+<Base
+  title="Agendamento e Contato | Dr. Virlênio de Andrade Lara"
+  description="Agende consulta com o Dr. Virlênio de Andrade Lara. Atendimento em Caratinga, Itaguara e Abre Campo."
+  current="contato"
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Agendamento</p>
+      <h1>Agende sua consulta</h1>
+      <p class="lead">Escolha a cidade e envie a mensagem. A equipe confirma data e horário.</p>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="wrap contact-layout">
+      <ContactForm client:load />
+      <div>
+        <h2>Locais</h2>
+        <div class="contact-locs">
+          <article class="panel loc">
+            <h3>Caratinga</h3>
+            <address>
+              Travessa Coronel Ferreira Santos, 17, Sala 101<br />
+              Centro, Caratinga/MG
+            </address>
+            <p>WhatsApp: (33) 99984-8276</p>
+            <p>(33) 3322-2815</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5533999848276" target="_blank" rel="noopener noreferrer">Agendar</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Travessa+Coronel+Ferreira+Santos,+17,+Centro,+Caratinga,+MG" target="_blank" rel="noopener noreferrer">Como chegar</a>
+            </div>
+          </article>
+
+          <article class="panel loc">
+            <h3>Itaguara</h3>
+            <address>
+              Rua Monsenhor João Rodrigues, 119, Centro<br />
+              Itaguara/MG
+            </address>
+            <p>WhatsApp: (37) 99961-0922</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5537999610922?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20em%20Itaguara%20com%20o%20Doutor%20Virlenio." target="_blank" rel="noopener noreferrer">Agendar</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Monsenhor+João+Rodrigues,+119,+Centro,+Itaguara,+MG" target="_blank" rel="noopener noreferrer">Como chegar</a>
+            </div>
+          </article>
+
+          <article class="panel loc">
+            <h3>Abre Campo</h3>
+            <address>
+              Hospital Nossa Senhora da Conceição / Santa Casa<br />
+              Rua Santo Antônio, 29
+            </address>
+            <p>(31) 3872-1233</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/5533999848276?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20em%20Abre%20Campo." target="_blank" rel="noopener noreferrer">Agendar</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Santo+Antônio,+29,+Abre+Campo,+MG" target="_blank" rel="noopener noreferrer">Como chegar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
