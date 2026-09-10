@@ -578,6 +578,15 @@ address {
   color: var(--muted);
 }
 
+.loc .actions {
+  margin-top: 18px;
+}
+
+.loc .actions .btn {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
 .site-footer {
   background: var(--footer);
   color: #c5d0cd;
